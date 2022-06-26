@@ -1,0 +1,98 @@
+.navbar {
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
+  overflow: hidden;
+  background-color: #222831;
+}
+
+.navbar .wrapper {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .wrapper .left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .wrapper .left .logo {
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #efefef;
+  margin-right: 40px;
+}
+
+.navbar .wrapper .left .itemContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.navbar .wrapper .left .itemContainer span {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.navbar .wrapper .left .itemContainer .phoneIcon {
+  color: white;
+  margin-right: 6px;
+}
+
+.navbar .wrapper .left .itemContainer .mailIcon {
+  color: white;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.navbar .wrapper .right .hamburger {
+  width: 32px;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.navbar .wrapper .right .hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: whitesmoke;
+  transform-origin: left;
+  transition: all 0.7s ease;
+}
+
+.active {
+  background-color: #393e46;
+}
+
+.active .wrapper .right .hamburger span:first-child {
+  transform: rotate(45deg);
+}
+
+.active .wrapper .right .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.active .wrapper .right .hamburger span:last-child {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 909px) {
+  .navbar .wrapper .left .itemContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+    .navbar .wrapper .left .logo {
+        font-size: 25px;
+    }
+}
