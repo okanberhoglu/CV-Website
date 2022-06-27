@@ -1,226 +1,224 @@
 .home {
-    background-color: #EFEFEF;
-    overflow: hidden;
+  background-color: #efefef;
+  overflow: hidden;
 }
 
 #canvas {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-
-
-.home h1{
-    font-size: 85px;
+.home h1 {
+  font-size: 85px;
 }
 
 .home .hello {
-    display: flex;
-    overflow: hidden;
-    cursor: context-menu;
-    position: absolute;
-    top: 24%;
-    left: 3%;
+  display: flex;
+  overflow: hidden;
+  cursor: context-menu;
+  position: absolute;
+  top: 24%;
+  left: 3%;
 }
 
 .home .nameBox {
-    display: flex;
-    overflow: hidden;
-    cursor: context-menu;
-    position: absolute;
-    top: 33%;
-    left: 3%;
+  display: flex;
+  overflow: hidden;
+  cursor: context-menu;
+  position: absolute;
+  top: 33%;
+  left: 3%;
 }
 
 .home .nameBox .name {
-    display: flex;
-    color: #0f9cdd;
-    font-weight: 700;
-    overflow: hidden;
+  display: flex;
+  color: #0f9cdd;
+  font-weight: 700;
+  overflow: hidden;
 }
 
 .home .nameBox .lastName {
-    display: flex;
-    color: #2155CD;
-    font-weight: 700;
-    margin-left: 15px;
-    overflow: hidden;
+  display: flex;
+  color: #2155cd;
+  font-weight: 700;
+  margin-left: 15px;
+  overflow: hidden;
 }
 
 .home .hello .alpha {
-    font-size: 55px;
+  font-size: 55px;
 }
 
 .home .hello .Iam {
-    display: flex;
-    overflow: hidden;
-    margin-left: 15px;
+  display: flex;
+  overflow: hidden;
+  margin-left: 15px;
 }
 
 .home .alpha:hover {
-    animation: animation 0.7s;
+  animation: animation 0.7s;
 }
 
 @keyframes animation {
-    0%{
-        transform: scale(1.2,0.5);
-    }
-    16%{
-        transform: scale(1.2,0.5);
-    }
-    25%{
-        transform: scale(1.2,0.5);
-    }
-    32%{
-        transform: scale(0.8,1.1);
-    }
-    48%{
-        transform: scale(0.95,1);
-    }
-    64%{
-        transform: scale(0.8,1.2);
-    }
-    80%{
-        transform: scale(1.15,1);
-    }
-    87%{
-        transform: scale(1.15,1);
-    }
-    90%{
-        /* This will add the shaking effect one time almost at the end*/
-        transform: scale(0.8,1);
-    }
-    95%{
-        transform: scale(1.05,1);
-    }
-    100%{
-        transform: scale(1,1);
-    }
+  0% {
+    transform: scale(1.2, 0.5);
+  }
+  16% {
+    transform: scale(1.2, 0.5);
+  }
+  25% {
+    transform: scale(1.2, 0.5);
+  }
+  32% {
+    transform: scale(0.8, 1.1);
+  }
+  48% {
+    transform: scale(0.95, 1);
+  }
+  64% {
+    transform: scale(0.8, 1.2);
+  }
+  80% {
+    transform: scale(1.15, 1);
+  }
+  87% {
+    transform: scale(1.15, 1);
+  }
+  90% {
+    /* This will add the shaking effect one time almost at the end*/
+    transform: scale(0.8, 1);
+  }
+  95% {
+    transform: scale(1.05, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
-.home .socialMedia{
-    position: absolute;
-    top: 15%;
-    left: 3%;
+.home .socialMedia {
+  position: absolute;
+  top: 15%;
+  left: 3%;
 }
 
-.home .socialMedia *{
-    font-size: 40px;
-    margin-left: 10px;
-    transition: all 0.5s;
-    color: black
+.home .socialMedia * {
+  font-size: 40px;
+  margin-left: 10px;
+  transition: all 0.5s;
+  color: black;
 }
-.home .socialMedia *:hover{
-    font-size: 50px;
+.home .socialMedia *:hover {
+  font-size: 50px;
 }
 
 .home span:first-child {
-    font-size: 50px;
-    font-weight: 500;
+  font-size: 50px;
+  font-weight: 500;
 }
 .home .getResumeButton {
-   margin-top: 50px;
-   position: absolute;
-   top: 52%;
-   left: 3%;
+  margin-top: 50px;
+  position: absolute;
+  top: 52%;
+  left: 3%;
 }
 .home .getResumeButton a button {
-    border-width: 3px;
-    border-radius: 40px;
-    font-size: 30px;
-    padding: 20px;
-    cursor: pointer;
-    transition: all 0.5s ease;
+  border-width: 3px;
+  border-radius: 40px;
+  font-size: 30px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
-.home .getResumeButton a button:hover{
-    background-color: #15133C;
-    color: white;
+.home .getResumeButton a button:hover {
+  background-color: #15133c;
+  color: white;
 }
 
-.home .down{
-    margin-left: 300px;
-    color: #222831;
-    position: absolute;
-    font-size: 60px;
-    bottom: 10px;
-    right: 15%;
-    animation: arrowBlink 2s infinite;
+.home .down {
+  margin-left: 300px;
+  color: #222831;
+  position: absolute;
+  font-size: 60px;
+  bottom: 10px;
+  right: 15%;
+  animation: arrowBlink 2s infinite;
 }
 
 @keyframes arrowBlink {
-    100%{
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
 .home .role {
-    position: absolute;
-    left: 3%;
-    top: 45%;
-    display: inline-block;
-    animation-name: roleAnimation;
-    animation-duration: 3s;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    font-size: 30px;
-    margin-top: 20px;
+  position: absolute;
+  left: 3%;
+  top: 45%;
+  display: inline-block;
+  animation-name: roleAnimation;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  font-size: 30px;
+  margin-top: 20px;
 }
 
 .home .role span:nth-child(1) {
-    animation-delay: 0.1;
+  animation-delay: 0.1;
 }
 
 .home .role span:nth-child(2) {
-    animation-delay: 0.2;
+  animation-delay: 0.2;
 }
 
 @keyframes roleAnimation {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media only screen and (max-width: 740px) {
-    .home .nameBox {
-        flex-direction: column;
-        font-size: 20px;
-    }
-    .home .alpha {
-        font-size: 80px;
-    }
-    .home .nameBox .lastName {
-        margin-top: -40px;
-        margin-left: -0.3px;
-    }
-    .home .role {
-        top: 60%
-    }
-    .home .getResumeButton {
-        top: 70%
-    }
-    .home .role {
-        font-size: 27px;
-    }
+  .home .nameBox {
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .home .alpha {
+    font-size: 80px;
+  }
+  .home .nameBox .lastName {
+    margin-top: -40px;
+    margin-left: -0.3px;
+  }
+  .home .role {
+    top: 60%;
+  }
+  .home .getResumeButton {
+    top: 70%;
+  }
+  .home .role {
+    font-size: 27px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .home .alpha {
-        font-size: 65px;
-    }
-    .home .role {
-        top: 49%;
-        font-size: 20px;
-    }
-    .home .getResumeButton {
-        top: 65%
-    }
+  .home .alpha {
+    font-size: 65px;
+  }
+  .home .role {
+    top: 49%;
+    font-size: 20px;
+  }
+  .home .getResumeButton {
+    top: 65%;
+  }
 }

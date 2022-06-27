@@ -1,7 +1,327 @@
 .about {
-    background-color: #222831;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: whitesmoke;
+  background-color: #222831;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.about .left {
+  flex: 50%;
+  text-align: left;
+}
+
+.about .left::before {
+  content: "<body>";
+  color: gray;
+  top: -80px;
+  left: -10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.about .left::after {
+  content: "</body>";
+  color: gray;
+  top: -80px;
+  left: -10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.about .right {
+  flex: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.about .left .caption {
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 40px;
+  margin-top: 70px;
+  display: flex;
+}
+
+.about .left .profile {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 70px;
+  text-align: justify;
+}
+
+.about .left .caption::before {
+  content: "<h1>";
+  color: gray;
+  top: -80px;
+  left: -10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.about .left .caption::after {
+  content: "\a\a\a\a</h1>";
+  color: gray;
+  bottom: -10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 3px;
+  white-space: pre;
+}
+
+.about .left .profile::before {
+  content: "<p>";
+  color: gray;
+  top: -80px;
+  left: -10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.about .left .profile::after {
+  content: "\a</p>";
+  color: gray;
+  bottom: -10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 3px;
+  white-space: pre;
+}
+.about .left .caption .me {
+  display: flex;
+  overflow: hidden;
+}
+
+.about .left .caption .myself {
+  display: flex;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.about .left .caption .and {
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.about .left .caption .ben {
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.about .alpha {
+  cursor: context-menu;
+  transition: color 0.4s ease-in-out;
+}
+
+.about .alpha:hover {
+  color: #f66b0e;
+  animation: animation 0.7s ease-in-out;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(1.2, 0.5);
+  }
+  10% {
+    transform: scale(1.2, 0.5);
+  }
+  16% {
+    transform: scale(1.2, 0.5);
+  }
+  25% {
+    transform: scale(1.2, 0.5);
+  }
+  32% {
+    transform: scale(0.8, 1.1);
+  }
+  48% {
+    transform: scale(0.95, 1);
+  }
+  55% {
+    transform: scale(0.9, 1.05);
+  }
+  64% {
+    transform: scale(0.8, 1.2);
+  }
+  80% {
+    transform: scale(1.15, 1);
+  }
+  85% {
+    transform: scale(1.15, 1);
+  }
+  87% {
+    transform: scale(1.15, 1);
+  }
+  90% {
+    /* This will add the shaking effect one time almost at the end*/
+    transform: scale(0.8, 1);
+  }
+  95% {
+    transform: scale(1.05, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.about .right .canvas {
+  cursor: grab;
+}
+
+.about .right .canvas:active {
+  cursor: grabbing;
+}
+
+@media only screen and (max-width: 1341px){
+  .about .alpha {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 1250px){
+  .about .alpha {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .about .alpha {
+    margin-top: 10px;
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 1150px){
+  .about .alpha {
+    margin-top: 20px;
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .about .alpha {
+    margin-top: 25px;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 1050px){
+  .about .alpha {
+    margin-top: 30px;
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 970px){
+  .about .alpha {
+    margin-top: 35px;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .about .alpha {
+    margin-top: 45px;
+    font-size: 35px;
+  }
+  .about .left {
+    flex: 6;
+  }
+  .about .right {
+    flex: 4;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .about {
+    flex-direction: column;
+  }
+  .about .left .caption {
+    margin-top: 0;
+    margin-left: 27px;
+  }
+  .about .left .profile {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 19px;
+    margin-bottom: -1px;
+    font-size: 15px;  
+    text-align: justify;
+  }
+  .about .left::before {
+    margin-left: 5px;
+    letter-spacing: 1px;
+  }
+  
+  .about .left::after {
+    margin-left: 5px;
+    letter-spacing: 1px;
+  }
+  .about .left .caption::before {
+    margin-left: 5px;
+    letter-spacing: 1px;
+  }
+  
+  .about .left .caption::after {
+    letter-spacing: 1px;
+  }
+  .about .left .profile::before {
+    letter-spacing: 1px;
+  }
+  
+  .about .left .profile::after {
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .about {
+    flex-direction: column;
+  }
+  .about .left {
+    flex: 7;
+  }
+  .about .right {
+    flex: 3;
+  }
+  .about .left .caption {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .about .left .profile {
+    margin-top: 2px;
+    margin-left: 24px;
+    margin-right: 23px;
+    margin-bottom: 0;
+    font-size: 12px;  
+    text-align: justify;
+  }
+  .about .left::before {
+    margin-left: 5px;
+    letter-spacing: 1px;
+  }
+  
+  .about .left::after {
+    margin-left: 5px;
+    letter-spacing: 1px;
+  }
+  .about .left .caption::before {
+    margin-left: 5px;
+    letter-spacing: 1px;
+  }
+  
+  .about .left .caption::after {
+    letter-spacing: 1px;
+  }
+  .about .left .profile::before {
+    letter-spacing: 1px;
+  }
+  
+  .about .left .profile::after {
+    letter-spacing: 1px;
+  }
 }
