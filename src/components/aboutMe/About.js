@@ -1,13 +1,49 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./About.css";
 import { Canvas } from "@react-three/fiber";
-import ThreeDO from "./ThreeDO.js";
 import { OrbitControls } from "@react-three/drei";
 import { PerspectiveCamera } from "@react-three/drei";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useFrame } from '@react-three/fiber';
+
+function ThreeDO() {
+  const myMesh = useRef();
+  useFrame(({clock}) => {
+      const x = clock.getElapsedTime();
+      const y = clock.getElapsedTime();
+      myMesh.current.rotation.x = x;
+      myMesh.current.rotation.y = y;
+  });
+return (
+  <mesh rotation={[90,0,20]} ref={myMesh}>
+      <torusGeometry attach="geometry" args={[6,1.5,16,200]}/>
+      <meshPhongMaterial attach="material" />
+  </mesh>
+)
+}
+
 
 export default function About() {
+  const {ref,inView} = useInView();
+  const animation = useAnimation();
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        x:0,
+        transition: {
+          type:"spring", duration: 2, bounce: 0.3
+        }
+      })
+    }else{
+      animation.start({
+        x:"-100vw"
+      })
+    }
+  },[inView]);
+
   return (
-    <div className="about" id="about">
+    <div className="about" id="about" ref={ref}>
       <div className="left">
         <div className="caption">
           <span className="me">

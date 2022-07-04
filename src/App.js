@@ -5,25 +5,24 @@ import Navbar from "./components/navbar/Navbar.js";
 import Home from "./components/home/Home.js";
 import About from "./components/aboutMe/About.js";
 import Skills from "./components/skills/Skills.js";
-import Projects from "./components/projects/Projects.js";
-import Experiences from "./components/experiences/Experiences.js";
 import Contact from "./components/contact/Contact.js";
+import PandE from "./components/pande/PandE.js";
+import { motion } from "framer-motion";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="app">
+    <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1}} className="app">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Home />
         <About />
         <Skills />
-        <Projects />
-        <Experiences />
+        <PandE />
         <Contact />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -25,7 +25,7 @@ const Script = url => {
             constructor() {
                 this.x = mouse.x;
                 this.y = mouse.y;
-                this.size = Math.random() * 2 +  0.3;
+                this.size = Math.random() * 2 + 0.3;
                 this.speedX = Math.random() * 2 - 2;
                 this.speedY = Math.random() * 2 - 2;
                 this.color = '#0F3352';    
@@ -54,7 +54,7 @@ const Script = url => {
                     if(distance < 90) {
                         ctx.beginPath();
                         ctx.strokeStyle = spots[i].color;
-                        ctx.linewidth = spots[i].size/10;
+                        ctx.linewidth = spots[i].size/80;
                         ctx.moveTo(spots[i].x, spots[i].y);
                         ctx.lineTo(spots[j].x, spots[j].y);
                         ctx.stroke();

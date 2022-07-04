@@ -118,7 +118,7 @@
 .home .getResumeButton {
   margin-top: 50px;
   position: absolute;
-  top: 52%;
+  top: 62%;
   left: 3%;
 }
 .home .getResumeButton a button {
@@ -150,41 +150,24 @@
   }
 }
 
-.home .role {
+.home .roleContainer {
   position: absolute;
   left: 3%;
-  top: 45%;
-  display: inline-block;
-  animation-name: roleAnimation;
-  animation-duration: 3s;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  top: 47%;
+  margin-top: 40px;
+  overflow: hidden;
+  height: 80px;
+}
+
+.home .roleContainer .roles {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+.home .roleContainer .roles span {
+  height: 100%;
   font-size: 30px;
-  margin-top: 20px;
-}
-
-.home .role span:nth-child(1) {
-  animation-delay: 0.1;
-}
-
-.home .role span:nth-child(2) {
-  animation-delay: 0.2;
-}
-
-@keyframes roleAnimation {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 @media only screen and (max-width: 740px) {
@@ -199,13 +182,13 @@
     margin-top: -40px;
     margin-left: -0.3px;
   }
-  .home .role {
+  .home .roleContainer {
     top: 60%;
   }
   .home .getResumeButton {
     top: 70%;
   }
-  .home .role {
+  .home .roleContainer .roles span {
     font-size: 27px;
   }
 }
@@ -214,11 +197,13 @@
   .home .alpha {
     font-size: 65px;
   }
-  .home .role {
+  .home .roleContainer {
     top: 49%;
-    font-size: 20px;
   }
   .home .getResumeButton {
     top: 65%;
+  }
+  .home .roleContainer .roles span {
+    font-size: 20px;
   }
 }

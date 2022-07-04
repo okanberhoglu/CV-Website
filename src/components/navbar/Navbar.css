@@ -19,14 +19,28 @@
 .navbar .wrapper .left {
   display: flex;
   align-items: center;
+  margin-top: -0.2em;
 }
 
 .navbar .wrapper .left .logo {
-  font-size: 40px;
+  display: flex;
+  font-size: 50px;
   font-weight: 700;
   text-decoration: none;
   color: #efefef;
   margin-right: 40px;
+}
+
+.navbar .wrapper .left .logo div:nth-child(2) {
+  margin-left: 10px;
+}
+
+.navbar .wrapper .left .logo div span {
+  text-shadow: -0.18em 0.03em 0.12em rgba(2, 5, 53, 0.9);
+}
+
+.navbar .wrapper .left .logo div span:not(:first-child) {
+  margin-left: -0.09em;
 }
 
 .navbar .wrapper .left .itemContainer {
@@ -70,7 +84,7 @@
 }
 
 .active {
-  background-color: #393e46;
+  background-color: #06283D;
 }
 
 .active .wrapper .right .hamburger span:first-child {
@@ -85,7 +99,7 @@
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 909px) {
+@media screen and (max-width: 965px) {
   .navbar .wrapper .left .itemContainer {
     display: none;
   }

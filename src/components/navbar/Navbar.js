@@ -9,7 +9,22 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#home" className="logo">
-            Okan Berhoğlu
+            <div>
+              <span>O</span>
+              <span>K</span>
+              <span>A</span>
+              <span>N</span>
+            </div>
+            <div>
+              <span>B</span>
+              <span>E</span>
+              <span>R</span>
+              <span>H</span>
+              <span>O</span>
+              <span>Ğ</span>
+              <span>L</span>
+              <span>U</span>
+            </div>
           </a>
           <div className="itemContainer">
             <AiOutlinePhone size={"33px"} className="phoneIcon" />

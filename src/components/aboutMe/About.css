@@ -14,8 +14,8 @@
 .about .left::before {
   content: "<body>";
   color: gray;
-  top: -80px;
-  left: -10px;
+  top: 0px;
+  margin-left: 10px;
   font-size: 1.2rem;
   font-style: italic;
   letter-spacing: 3px;
@@ -24,8 +24,8 @@
 .about .left::after {
   content: "</body>";
   color: gray;
-  top: -80px;
-  left: -10px;
+  margin-top: -1000px;
+  margin-left: 10px;
   font-size: 1.2rem;
   font-style: italic;
   letter-spacing: 3px;
@@ -176,6 +176,12 @@
   cursor: grabbing;
 }
 
+@media only screen and (max-width: 1500px){
+  .about .left .profile {
+    margin-right: 40px;
+  }
+}
+
 @media only screen and (max-width: 1341px){
   .about .alpha {
     font-size: 70px;
@@ -245,7 +251,7 @@
     margin-left: 27px;
   }
   .about .left .profile {
-    margin-top: 10px;
+    margin-top: 0;
     margin-left: 20px;
     margin-right: 19px;
     margin-bottom: -1px;

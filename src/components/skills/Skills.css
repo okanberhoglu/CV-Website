@@ -1,3 +1,220 @@
 .skills {
-    background-color: #222831;
+  background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skills .content {
+  flex: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills .slider {
+  height: 70%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease-out;
+}
+
+.skills .slider .skillContainer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills .slider .skillContainer .item {
+  width: 80%;
+  max-width: 1100px;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills .slider .skillContainer .item .left {
+  flex: 4;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills .slider .skillContainer .item .left .leftContainer {
+  margin-left: 5px;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills .slider .skillContainer .item .left .leftContainer .imgContainer {
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.skills .slider .skillContainer .item .left .leftContainer .imgContainer img {
+  width: 110px;
+  height: 90px;
+}
+
+.skills .slider .skillContainer .item .left .leftContainer p {
+  text-align: justify;
+  overflow: hidden;
+}
+
+.skills .slider .skillContainer .item .right {
+  flex: 8;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.skills .slider .skillContainer .item .certificaRight {
+  flex: 10;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.skills .slider .skillContainer .item .right .cImg {
+  width: 36em;
+  transform: rotate(-10deg);
+}
+
+.skills .arrow {
+  color: whitesmoke;
+  font-size: 4em;
+  cursor: pointer;
+  position: absolute;
+}
+
+.skills .arrowLeft {
+  left: 3%;
+}
+
+.skills .arrowRight {
+  right: 3%;
+}
+
+.skills .caption {
+  flex: 2;
+  color: whitesmoke;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.skills .caption h1 {
+  font-size: 80px;
+  cursor: context-menu;
+  transition: color 0.4s ease-in-out;
+}
+
+.skills .caption h1:hover {
+  color: #f66b0e;
+  animation: animation 0.7s ease-in-out;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(1.2, 0.5);
+  }
+  10% {
+    transform: scale(1.2, 0.5);
+  }
+  16% {
+    transform: scale(1.2, 0.5);
+  }
+  25% {
+    transform: scale(1.2, 0.5);
+  }
+  32% {
+    transform: scale(0.8, 1.1);
+  }
+  48% {
+    transform: scale(0.95, 1);
+  }
+  55% {
+    transform: scale(0.9, 1.05);
+  }
+  64% {
+    transform: scale(0.8, 1.2);
+  }
+  80% {
+    transform: scale(1.15, 1);
+  }
+  85% {
+    transform: scale(1.15, 1);
+  }
+  87% {
+    transform: scale(1.15, 1);
+  }
+  90% {
+    /* This will add the shaking effect one time almost at the end*/
+    transform: scale(0.8, 1);
+  }
+  95% {
+    transform: scale(1.05, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .skills .content {
+    flex: 14
+  }
+  .skills .slider {
+    height: 80%;
+  }
+  .skills .slider .skillContainer .item {
+    flex-direction: column;
+  }
+  .skills .caption {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .skills .arrow {
+    font-size: 50px;
+  }
+  .skills .arrowLeft {
+    left: 1%
+  }
+  .skills .arrowRight {
+    right: 1%
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .skills .arrow {
+    font-size: 36px;
+  }
+  .skills .arrowLeft {
+    left: 0.02%
+  }
+  .skills .arrowRight {
+    right: 0.02%
+  }
+  .skills .slider .skillContainer .item {
+    width: 85%;
+  }
 }

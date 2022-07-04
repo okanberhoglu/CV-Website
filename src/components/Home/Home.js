@@ -5,33 +5,22 @@ import { AiFillInstagram } from "@react-icons/all-files/ai/AiFillInstagram";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import Script from "./Script.js";
+import ReactTextTransition, { presets } from "react-text-transition";
+import { motion } from "framer-motion";
 
 export default function Home({ url }) {
+  const words = ["Jr. Full Stack Developer", "Mechanical Engineering Student"];
   Script(url);
-  const roleArray = [
-    "Jr. Full Stack Developer",
-    "Mechanical Engineering Student",
-  ];
-  const [text, setText] = useState(roleArray[0].split(""));
-  const [countUp, setCountUp] = useState(0);
-
+  const [index, setIndex] = useState(0);
   useEffect(() => {
-    const id = setTimeout(() => {
-      if (countUp === roleArray.length - 1) {
-        setCountUp(0);
-      } else {
-        setCountUp((prev) => prev + 1);
-      }
-    }, 3000);
-    return () => {
-      clearTimeout(id);
-    };
-  }, [countUp]);
-  useEffect(() => {
-    setText(roleArray[countUp].split(""));
-  }, [countUp]);
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      1500
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
   return (
-    <div className="home" id="home">
+    <motion.div className="home" id="home" initial={{x:"-100vw"}} animate={{x:0}} transition={{duration:1, type:"spring", bounce:0.3}}>
       <canvas id="canvas" />
       <div className="socialMedia">
         <a href="https://www.instagram.com/berhokan/" target="_blank">
@@ -79,10 +68,13 @@ export default function Home({ url }) {
           <h1 className="alpha">U</h1>
         </span>
       </div>
-      <div className="role">
-        {text.map((item, index) => (
-          <span key={index}>{item}</span>
-        ))}
+      <div className="roleContainer"s>
+        <ReactTextTransition
+          springConfig={presets.wobbly}
+          className="roles"
+        >
+          <span>{words[index % words.length]}</span>
+        </ReactTextTransition>
       </div>
       <div className="getResumeButton">
         <a
@@ -95,6 +87,6 @@ export default function Home({ url }) {
       <a href="#about" className="down">
         <AiOutlineDown />
       </a>
-    </div>
+    </motion.div>
   );
 }
