@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/CV-Website/static/css/main.fa84679b.css",
+    "main.js": "/CV-Website/static/js/main.c9c7838b.js",
+    "static/media/MATLABOnramp.jpg": "/CV-Website/static/media/MATLABOnramp.2aa7c556dc6854ec39e9.jpg",
+    "static/media/SimulinkOnramp.jpg": "/CV-Website/static/media/SimulinkOnramp.5349493267d893b0a359.jpg",
+    "static/media/SimscapeOnramp.jpg": "/CV-Website/static/media/SimscapeOnramp.c99211ac190829c8012a.jpg",
+    "index.html": "/CV-Website/index.html",
+    "main.fa84679b.css.map": "/CV-Website/static/css/main.fa84679b.css.map",
+    "main.c9c7838b.js.map": "/CV-Website/static/js/main.c9c7838b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa84679b.css",
+    "static/js/main.c9c7838b.js"
+  ]
+}
