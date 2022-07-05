@@ -1,16 +1,27 @@
 {
   "files": {
-    "main.css": "/CV-Website/static/css/main.fa84679b.css",
-    "main.js": "/CV-Website/static/js/main.1469430b.js",
+    "main.css": "/CV-Website/static/css/main.ff26c11c.css",
+    "main.js": "/CV-Website/static/js/main.8ab599c9.js",
+    "static/media/React.png": "/CV-Website/static/media/React.8a6fc0a24a800d1e0f4a.png",
+    "static/media/matlab.png": "/CV-Website/static/media/matlab.c6197cc110bdf4bd94c5.png",
+    "static/media/NET_Core_Logo.png": "/CV-Website/static/media/NET_Core_Logo.f9abf75ea7a3f7a02b57.png",
+    "static/media/PythonForDataScience.jpg": "/CV-Website/static/media/PythonForDataScience.f6bc3897eea5be2e3c06.jpg",
+    "static/media/ReactImg.jpg": "/CV-Website/static/media/ReactImg.8a60ae9a225f60447da6.jpg",
+    "static/media/CSImg.jpg": "/CV-Website/static/media/CSImg.a525aa2acdadf07ef583.jpg",
     "static/media/MATLABOnramp.jpg": "/CV-Website/static/media/MATLABOnramp.2aa7c556dc6854ec39e9.jpg",
     "static/media/SimulinkOnramp.jpg": "/CV-Website/static/media/SimulinkOnramp.5349493267d893b0a359.jpg",
     "static/media/SimscapeOnramp.jpg": "/CV-Website/static/media/SimscapeOnramp.c99211ac190829c8012a.jpg",
+    "static/media/C-Sharp.png": "/CV-Website/static/media/C-Sharp.324287af23c2b6ad522c.png",
+    "static/media/SolidIMG.jpg": "/CV-Website/static/media/SolidIMG.9f61b4d6d040390a8a56.jpg",
+    "static/media/Python.png": "/CV-Website/static/media/Python.a9a5bd46da375a33c98e.png",
+    "static/media/java.png": "/CV-Website/static/media/java.66c01e0c39bbdd9ae552.png",
+    "static/media/SolidWorks_Logo.png": "/CV-Website/static/media/SolidWorks_Logo.b521bc21ff3f317856f5.png",
     "index.html": "/CV-Website/index.html",
-    "main.fa84679b.css.map": "/CV-Website/static/css/main.fa84679b.css.map",
-    "main.1469430b.js.map": "/CV-Website/static/js/main.1469430b.js.map"
+    "main.ff26c11c.css.map": "/CV-Website/static/css/main.ff26c11c.css.map",
+    "main.8ab599c9.js.map": "/CV-Website/static/js/main.8ab599c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa84679b.css",
-    "static/js/main.1469430b.js"
+    "static/css/main.ff26c11c.css",
+    "static/js/main.8ab599c9.js"
   ]
 }
