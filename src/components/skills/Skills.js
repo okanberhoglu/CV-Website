@@ -3,6 +3,16 @@ import "./Skills.css";
 import { AiOutlineRight } from "@react-icons/all-files/ai/AiOutlineRight";
 import { AiOutlineLeft } from "@react-icons/all-files/ai/AiOutlineLeft";
 import Certificates from "../certificates/Certificates.js";
+import ReactPng from "../../assets/React.png";
+import ReactImg from "../../assets/ReactImg.jpg";
+import CSPng from "../../assets/C-Sharp.png";
+import CSImg from "../../assets/CSImg.jpg";
+import JavaPng from "../../assets/java.png"; 
+import MatlabPng from "../../assets/matlab.png";
+import SolidPng from "../../assets/SolidWorks_Logo.png";
+import SolidImg from "../../assets/SolidIMG.jpg"; 
+import PythonPng from "../../assets/Python.png";
+import PythonImg from "../../assets/PythonForDataScience.jpg";
 
 export default function Skills() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -10,43 +20,43 @@ export default function Skills() {
     {
       id: "1",
       title: "React",
-      icon: "./assets/React.png",
-      img: "./assets/ReactImg.jpg",
+      icon: ReactPng,
+      img: ReactImg,
       desc: "I developed this website which is you looking at :) , using react.js. And also I developed a mobile app with react-native.",
     },
     {
       id: "2",
       title: "C#",
-      icon: "./assets/C-Sharp.png",
-      img: "./assets/CSImg.jpg",
+      icon: CSPng,
+      img: CSImg,
       desc: "I developed online shoping website backend and rent a car website backend. ",
     },
     {
       id: "3",
       title: "Java",
-      icon: "./assets/java.png",
+      icon: JavaPng,
       img: undefined,
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     },
     {
       id: "4",
       title: "Matlab",
-      icon: "./assets/matlab.png",
+      icon: MatlabPng,
       img: undefined,
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     },
     {
       id: "5",
       title: "SolidWorks",
-      icon: "./assets/SolidWorks_Logo.png",
-      img: "./assets/SolidIMG.jpg",
+      icon: SolidPng,
+      img: SolidImg,
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     },
     {
       id: "6",
       title: "Python",
-      icon: "./assets/Python.png",
-      img: "./assets/PythonForDataScience.jpg",
+      icon: PythonPng,
+      img: PythonImg,
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     },
   ];

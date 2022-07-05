@@ -3,6 +3,10 @@ import "./PandE.css";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Sphere, MeshDistortMaterial } from "@react-three/drei";
+import MatlabPng from "../../assets/matlab.png";
+import ReactPng from "../../assets/React.png";
+import NetPng from "../../assets/NET_Core_Logo.png";
+
 
 function AnimatedSphere() {
   return (
@@ -23,22 +27,26 @@ export default function PandE() {
     {
       id: 1,
       name: "Shopping website backend",
-      img: "./assets/NET_Core_Logo.png",
+      img: NetPng,
+      path: "/OSBackend"
     },
     {
       id: 2,
       name: "Rent a car website backend",
-      img: "./assets/NET_Core_Logo.png",
+      img: NetPng,
+      path: "/RCBackend",
     },
     {
       id: 3,
       name: "PC Holder Design Matlab App",
-      img: "./assets/matlab.png",
+      img: MatlabPng,
+      path: "/PCHolder",
     },
     {
       id: 4,
       name: "Sigun mobile app",
-      img: "./assets/React.png",
+      img: ReactPng,
+      path: "/SMobileApp",
     },
   ];
   const experienceData = [
@@ -87,6 +95,7 @@ export default function PandE() {
               <div className="item" key={item.id}>
                 <img src={item.img} />
                 <h3>{item.name}</h3>
+                <a href={item.path}>View Details</a>
               </div>
             ))}
           </div>

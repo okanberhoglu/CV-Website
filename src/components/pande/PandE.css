@@ -96,6 +96,13 @@
     position: absolute;
 }
 
+.pande .projects .projectsContainer .projectContainer .item a {
+    color: whitesmoke;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 3em;
+}
+
 .pande .projects .projectsContainer .projectContainer .item:hover {
     background-color: #113B49;
 }

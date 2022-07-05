@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Certificates.css";
-import Matlabimage from "./certificateImages/MATLABOnramp.jpg";
-import SimulinkImage from "./certificateImages/SimulinkOnramp.jpg";
-import SimscapeImage from "./certificateImages/SimscapeOnramp.jpg";
+import Matlabimage from "../../assets/MATLABOnramp.jpg";
+import SimulinkImage from "../../assets/SimulinkOnramp.jpg";
+import SimscapeImage from "../../assets/SimscapeOnramp.jpg";
 
 export default function Certificates() {
   const [activeImage, setActiveImage] = useState(1);
