@@ -6,6 +6,7 @@ import { Sphere, MeshDistortMaterial } from "@react-three/drei";
 import MatlabPng from "../../assets/matlab.png";
 import ReactPng from "../../assets/React.png";
 import NetPng from "../../assets/NET_Core_Logo.png";
+import { Link } from "react-router-dom";
 
 
 function AnimatedSphere() {
@@ -22,7 +23,7 @@ function AnimatedSphere() {
   );
 }
 
-export default function PandE() {
+export default function PandE({ setRoute }) {
   const projectsData = [
     {
       id: 1,
@@ -95,7 +96,7 @@ export default function PandE() {
               <div className="item" key={item.id}>
                 <img src={item.img} />
                 <h3>{item.name}</h3>
-                <a href={item.path}>View Details</a>
+                <Link to={item.path} onClick={() => setRoute(true)}>View Details</Link>
               </div>
             ))}
           </div>

@@ -9,13 +9,14 @@ import Contact from "./components/contact/Contact.js";
 import PandE from "./components/pande/PandE.js";
 import { motion } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
-import OSBackendCS from "./components/projectsList/OSBackendCS/OSBackendCS";
-import RCBackendCS from "./components/projectsList/RCBackendCS/RCBackendCS";
-import PCHolderMApp from "./components/projectsList/PCHolderMApp/PCHolderMApp";
-import SMobileApp from "./components/projectsList/SMobileApp/SMobileApp";
+import OSBackendCS from "./components/projectsList/OSBackendCS/OSBackendCS.js";
+import RCBackendCS from "./components/projectsList/RCBackendCS/RCBackendCS.js";
+import PCHolderMApp from "./components/projectsList/PCHolderMApp/PCHolderMApp.js";
+import SMobileApp from "./components/projectsList/SMobileApp/SMobileApp.js";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isRoute, setRoute] = useState(false);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -23,7 +24,12 @@ function App() {
       transition={{ duration: 1 }}
       className="app"
     >
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Navbar
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        isRoute={isRoute}
+        setRoute={setRoute}
+      />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Routes>
         <Route
@@ -33,12 +39,12 @@ function App() {
               <Home />
               <About />
               <Skills />
-              <PandE />
+              <PandE setRoute={setRoute} />
               <Contact />
             </div>
           }
         />
-        <Route path="/OSBackend" element={<OSBackendCS />} />
+        <Route path="/OSBackend" component={OSBackendCS} element={<OSBackendCS/>}/>
         <Route path="/RCBackend" element={<RCBackendCS />} />
         <Route path="/PCHolder" element={<PCHolderMApp />} />
         <Route path="/SMobileApp" element={<SMobileApp />} />

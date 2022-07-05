@@ -3,8 +3,6 @@ import "./About.css";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { PerspectiveCamera } from "@react-three/drei";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { useFrame } from '@react-three/fiber';
 
 function ThreeDO() {
@@ -25,25 +23,8 @@ return (
 
 
 export default function About() {
-  const {ref,inView} = useInView();
-  const animation = useAnimation();
-  useEffect(() => {
-    if(inView){
-      animation.start({
-        x:0,
-        transition: {
-          type:"spring", duration: 2, bounce: 0.3
-        }
-      })
-    }else{
-      animation.start({
-        x:"-100vw"
-      })
-    }
-  },[inView]);
-
   return (
-    <div className="about" id="about" ref={ref}>
+    <div className="about" id="about">
       <div className="left">
         <div className="caption">
           <span className="me">

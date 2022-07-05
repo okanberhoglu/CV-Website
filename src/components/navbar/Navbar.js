@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Navbar.css";
 import { AiOutlinePhone } from "@react-icons/all-files/ai/AiOutlinePhone";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
+import { useNavigate } from "react-router-dom";
 
-export default function Navbar({ menuOpen, setMenuOpen }) {
+export default function Navbar({ menuOpen, setMenuOpen, isRoute, setRoute }) {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    if(isRoute){
+      setRoute(false);
+      navigate("/CV-Website");
+    }else{
+    setMenuOpen(!menuOpen);
+    }
+  }
   return (
     <div className={"navbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#home" className="logo">
+          <a href="/CV-Website#home" className="logo">
             <div>
               <span>O</span>
               <span>K</span>
@@ -36,7 +46,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
           </div>
         </div>
         <div className="right">
-          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          <div className={isRoute ? "hamburger hamburgerActive" : "hamburger"} onClick={()=>handleClick()}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
