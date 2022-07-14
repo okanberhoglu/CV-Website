@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CV-Website/static/css/main.b4ab2f05.css",
+    "main.css": "/CV-Website/static/css/main.e402b3a8.css",
     "main.js": "/CV-Website/static/js/main.924266f6.js",
     "static/media/React.png": "/CV-Website/static/media/React.8a6fc0a24a800d1e0f4a.png",
     "static/media/matlab.png": "/CV-Website/static/media/matlab.c6197cc110bdf4bd94c5.png",
@@ -18,11 +18,11 @@
     "static/media/java.png": "/CV-Website/static/media/java.66c01e0c39bbdd9ae552.png",
     "static/media/SolidWorks_Logo.png": "/CV-Website/static/media/SolidWorks_Logo.b521bc21ff3f317856f5.png",
     "index.html": "/CV-Website/index.html",
-    "main.b4ab2f05.css.map": "/CV-Website/static/css/main.b4ab2f05.css.map",
+    "main.e402b3a8.css.map": "/CV-Website/static/css/main.e402b3a8.css.map",
     "main.924266f6.js.map": "/CV-Website/static/js/main.924266f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4ab2f05.css",
+    "static/css/main.e402b3a8.css",
     "static/js/main.924266f6.js"
   ]
 }
