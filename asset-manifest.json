@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/CV-Website/static/css/main.e402b3a8.css",
-    "main.js": "/CV-Website/static/js/main.7aa8275b.js",
+    "main.js": "/CV-Website/static/js/main.432635c2.js",
     "static/media/React.png": "/CV-Website/static/media/React.8a6fc0a24a800d1e0f4a.png",
     "static/media/matlab.png": "/CV-Website/static/media/matlab.c6197cc110bdf4bd94c5.png",
     "static/media/NET_Core_Logo.png": "/CV-Website/static/media/NET_Core_Logo.f9abf75ea7a3f7a02b57.png",
+    "static/media/MatlabIMG.jpg": "/CV-Website/static/media/MatlabIMG.07f1876fdec3d35c108b.jpg",
     "static/media/PythonForDataScience.jpg": "/CV-Website/static/media/PythonForDataScience.f6bc3897eea5be2e3c06.jpg",
     "static/media/ReactImg.jpg": "/CV-Website/static/media/ReactImg.8a60ae9a225f60447da6.jpg",
     "static/media/CSImg.jpg": "/CV-Website/static/media/CSImg.a525aa2acdadf07ef583.jpg",
@@ -19,10 +20,10 @@
     "static/media/SolidWorks_Logo.png": "/CV-Website/static/media/SolidWorks_Logo.b521bc21ff3f317856f5.png",
     "index.html": "/CV-Website/index.html",
     "main.e402b3a8.css.map": "/CV-Website/static/css/main.e402b3a8.css.map",
-    "main.7aa8275b.js.map": "/CV-Website/static/js/main.7aa8275b.js.map"
+    "main.432635c2.js.map": "/CV-Website/static/js/main.432635c2.js.map"
   },
   "entrypoints": [
     "static/css/main.e402b3a8.css",
-    "static/js/main.7aa8275b.js"
+    "static/js/main.432635c2.js"
   ]
 }
